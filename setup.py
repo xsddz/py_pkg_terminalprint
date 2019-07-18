@@ -1,9 +1,9 @@
-from setuptools import setup
+import setuptools
 
 with open("README.rst", "r") as fh:
     long_description = fh.read()
 
-setup(
+setuptools.setup(
     name             = 'terminalprint',
     version          = '0.0.1',
     description      = 'a package for terminal pretty print',
