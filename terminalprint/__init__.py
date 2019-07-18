@@ -1,1 +1,1 @@
-from .tprint import t_table_print, t_str_pad, t_str_len
+from .tprint import table_print, str_pad, str_len
