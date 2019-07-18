@@ -1,8 +1,13 @@
-# terminalprint
+=============
+terminalprint
+=============
 
-To user, simply do::
 
-```
->>> import terminalprint
->>> terminalprint.t_str_len('哈哈哈')
-```
+
+Quickstart
+==========
+
+.. code::
+    >>> import terminalprint
+    >>> terminalprint.t_str_len('哈哈哈')
+
