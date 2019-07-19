@@ -3,7 +3,6 @@ terminalprint
 =============
 
 
-
 Quickstart
 ----------
 
@@ -31,6 +30,7 @@ Usage::
     +--------------+--------------+
     >>> 
 
-Example::
+Example
+-------
 
-.. image:: example-01.png
+.. image:: docs/example-01.png
