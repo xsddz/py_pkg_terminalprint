@@ -7,27 +7,30 @@ terminalprint
 Quickstart
 ----------
 
-install::
+Install::
 
-    $ pip install terminalprint
+    pip install terminalprint
 
-code::
+Usage::
 
     >>> table = [
-    ...         ["测试表头1", "测试表头2", "测试表头3", '测试表头4'],
-    ...         ["哈哈d", "dasfd12f", "哈哈哈哈", '123你好'],
-    ...         ["dalfja", "啦啦啦啦短发就是佛的", '大方nmm', '的沙发啊的'],
-    ...     ]
-    >>> 
+    ...     ['Heading1', 'Heading2'],
+    ...     ['row1 column1', 'row1 column2'],
+    ...     ['row2 column1', 'row2 column2'],
+    ...     ['row3 column1', 'row3 column2']
+    ... ]
     >>> 
     >>> import terminalprint as tp
-    >>> 
     >>> tp.table_print(table)
-    +-----------+----------------------+-----------+------------+
-    | 测试表头1 | 测试表头2            | 测试表头3 | 测试表头4  |
-    +-----------+----------------------+-----------+------------+
-    | 哈哈d     | dasfd12f             | 哈哈哈哈  | 123你好    |
-    | dalfja    | 啦啦啦啦短发就是佛的 | 大方nmm   | 的沙发啊的 |
-    +-----------+----------------------+-----------+------------+
+    +--------------+--------------+
+    | Heading1     | Heading2     |
+    +--------------+--------------+
+    | row1 column1 | row1 column2 |
+    | row2 column1 | row2 column2 |
+    | row3 column1 | row3 column2 |
+    +--------------+--------------+
     >>> 
 
+Example::
+
+.. image:: example-01.png
