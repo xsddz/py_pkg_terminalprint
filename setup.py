@@ -5,9 +5,10 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name             = 'terminalprint',
-    version          = '0.0.1',
+    version          = '0.0.2',
     description      = 'a package for terminal pretty print',
-    # long_description = long_description,
+    long_description = long_description,
+    long_description_content_type = 'text/x-rst',
     url              = 'https://github.com/xsddz/py_pkg_terminalprint',
     author           = 'xsddz',
     author_email     = 'dingzhns@gmail.com',
