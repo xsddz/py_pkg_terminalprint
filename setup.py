@@ -1,13 +1,23 @@
 import setuptools
+import codecs
+import os
+import re
 
-with open("README.rst", "r") as fh:
-    long_description = fh.read()
+NAME = 'terminalprint'
+VERSION = '0.0.5'
+
+def readme(path='README.rst'):
+    url_prefix = 'https://raw.githubusercontent.com/xsddz/py_pkg_{name}/master/'.format(name=NAME)
+
+    path = os.path.realpath(os.path.join(os.path.dirname(__file__), path))
+    handle = codecs.open(path, encoding='utf-8')
+    return handle.read().replace('.. image:: docs', '.. image:: {0}docs'.format(url_prefix))
 
 setuptools.setup(
-    name             = 'terminalprint',
-    version          = '0.0.2',
+    name             = NAME,
+    version          = VERSION,
     description      = 'a package for terminal pretty print',
-    long_description = long_description,
+    long_description = readme(),
     long_description_content_type = 'text/x-rst',
     url              = 'https://github.com/xsddz/py_pkg_terminalprint',
     author           = 'xsddz',
@@ -31,7 +41,7 @@ setuptools.setup(
         # that you indicate whether you support Python 2, Python 3 or both.
         "Programming Language :: Python :: 3",
     ],
-    keywords         = 'terminal print pretty',
+    keywords         = 'terminal print pretty table',
     packages         = setuptools.find_packages(),
     install_requires = [],
     python_requires  = '>=3',
